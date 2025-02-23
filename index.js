@@ -9,7 +9,7 @@ connectToDatabase();
 
 app.use(cors());
 
-app.use(express.json()); // Middleware for JSON data
+app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
@@ -22,3 +22,5 @@ app.use("/", quizzRouter);
 app.listen(port, () => {
   console.log(`Server is running on Port ${port}`);
 });
+
+// mvc method
